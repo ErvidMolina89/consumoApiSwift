@@ -13,6 +13,17 @@
 		354424A2278853E0003FAA96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 354424A0278853E0003FAA96 /* Main.storyboard */; };
 		354424A4278853E4003FAA96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 354424A3278853E4003FAA96 /* Assets.xcassets */; };
 		354424A7278853E4003FAA96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 354424A5278853E4003FAA96 /* LaunchScreen.storyboard */; };
+		354424B127885660003FAA96 /* CustomItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354424AF27885660003FAA96 /* CustomItemCell.swift */; };
+		354424B227885660003FAA96 /* CustomItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 354424B027885660003FAA96 /* CustomItemCell.xib */; };
+		354424B52788774B003FAA96 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354424B42788774B003FAA96 /* UserModel.swift */; };
+		354424B727888107003FAA96 /* DrinksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354424B627888107003FAA96 /* DrinksModel.swift */; };
+		354424B927888522003FAA96 /* ContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354424B827888522003FAA96 /* ContactModel.swift */; };
+		354424BC27889682003FAA96 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354424BB27889682003FAA96 /* ServiceManager.swift */; };
+		354424BE2788AC64003FAA96 /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354424BD2788AC64003FAA96 /* ApiRequest.swift */; };
+		354424C02788B430003FAA96 /* ModelRequestDrinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354424BF2788B430003FAA96 /* ModelRequestDrinks.swift */; };
+		354424C32788D8D5003FAA96 /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354424C22788D8D5003FAA96 /* ConnectionManager.swift */; };
+		354424C52788D914003FAA96 /* ConnectionManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354424C42788D914003FAA96 /* ConnectionManagerDelegate.swift */; };
+		354424C72789F967003FAA96 /* ModelRequestContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354424C62789F967003FAA96 /* ModelRequestContact.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +35,17 @@
 		354424A3278853E4003FAA96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		354424A6278853E4003FAA96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		354424A8278853E4003FAA96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		354424AF27885660003FAA96 /* CustomItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomItemCell.swift; sourceTree = "<group>"; };
+		354424B027885660003FAA96 /* CustomItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomItemCell.xib; sourceTree = "<group>"; };
+		354424B42788774B003FAA96 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		354424B627888107003FAA96 /* DrinksModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksModel.swift; sourceTree = "<group>"; };
+		354424B827888522003FAA96 /* ContactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactModel.swift; sourceTree = "<group>"; };
+		354424BB27889682003FAA96 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		354424BD2788AC64003FAA96 /* ApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
+		354424BF2788B430003FAA96 /* ModelRequestDrinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelRequestDrinks.swift; sourceTree = "<group>"; };
+		354424C22788D8D5003FAA96 /* ConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
+		354424C42788D914003FAA96 /* ConnectionManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionManagerDelegate.swift; sourceTree = "<group>"; };
+		354424C62789F967003FAA96 /* ModelRequestContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelRequestContact.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +78,10 @@
 		35442499278853E0003FAA96 /* ConsumeApi */ = {
 			isa = PBXGroup;
 			children = (
+				354424C12788D757003FAA96 /* ConnectionManager */,
+				354424BA27889650003FAA96 /* DataSource */,
+				354424B327887729003FAA96 /* Models */,
+				354424AE27885560003FAA96 /* CustomCell */,
 				3544249A278853E0003FAA96 /* AppDelegate.swift */,
 				3544249C278853E0003FAA96 /* SceneDelegate.swift */,
 				3544249E278853E0003FAA96 /* ViewController.swift */,
@@ -65,6 +91,45 @@
 				354424A8278853E4003FAA96 /* Info.plist */,
 			);
 			path = ConsumeApi;
+			sourceTree = "<group>";
+		};
+		354424AE27885560003FAA96 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				354424AF27885660003FAA96 /* CustomItemCell.swift */,
+				354424B027885660003FAA96 /* CustomItemCell.xib */,
+			);
+			path = CustomCell;
+			sourceTree = "<group>";
+		};
+		354424B327887729003FAA96 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				354424B42788774B003FAA96 /* UserModel.swift */,
+				354424B627888107003FAA96 /* DrinksModel.swift */,
+				354424B827888522003FAA96 /* ContactModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		354424BA27889650003FAA96 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				354424BB27889682003FAA96 /* ServiceManager.swift */,
+				354424BD2788AC64003FAA96 /* ApiRequest.swift */,
+				354424BF2788B430003FAA96 /* ModelRequestDrinks.swift */,
+				354424C62789F967003FAA96 /* ModelRequestContact.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		354424C12788D757003FAA96 /* ConnectionManager */ = {
+			isa = PBXGroup;
+			children = (
+				354424C22788D8D5003FAA96 /* ConnectionManager.swift */,
+				354424C42788D914003FAA96 /* ConnectionManagerDelegate.swift */,
+			);
+			path = ConnectionManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				354424A7278853E4003FAA96 /* LaunchScreen.storyboard in Resources */,
+				354424B227885660003FAA96 /* CustomItemCell.xib in Resources */,
 				354424A4278853E4003FAA96 /* Assets.xcassets in Resources */,
 				354424A2278853E0003FAA96 /* Main.storyboard in Resources */,
 			);
@@ -138,9 +204,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				354424C52788D914003FAA96 /* ConnectionManagerDelegate.swift in Sources */,
 				3544249F278853E0003FAA96 /* ViewController.swift in Sources */,
+				354424B127885660003FAA96 /* CustomItemCell.swift in Sources */,
 				3544249B278853E0003FAA96 /* AppDelegate.swift in Sources */,
+				354424B52788774B003FAA96 /* UserModel.swift in Sources */,
+				354424BC27889682003FAA96 /* ServiceManager.swift in Sources */,
+				354424C02788B430003FAA96 /* ModelRequestDrinks.swift in Sources */,
+				354424BE2788AC64003FAA96 /* ApiRequest.swift in Sources */,
+				354424C72789F967003FAA96 /* ModelRequestContact.swift in Sources */,
+				354424B727888107003FAA96 /* DrinksModel.swift in Sources */,
 				3544249D278853E0003FAA96 /* SceneDelegate.swift in Sources */,
+				354424C32788D8D5003FAA96 /* ConnectionManager.swift in Sources */,
+				354424B927888522003FAA96 /* ContactModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
