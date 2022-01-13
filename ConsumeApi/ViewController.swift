@@ -20,8 +20,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         configureTableView()
         connectionManager.setViewDelegate(connectionManagerDelegate: self)
-//        connectionManager.loadCatalogueElements(with: urlDrinks)
-        connectionManager.loadCatalogueElements(with: urlContact)
+        connectionManager.loadCatalogueElementsDrinks(with: urlDrinks)
+//        connectionManager.loadCatalogueElements(with: urlContact)
     }
     
     func configureTableView(){
@@ -35,7 +35,7 @@ class ViewController: UIViewController {
 extension ViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return resultContact.count
+        return result.drinks.count
 //        resultContact.count
 //        result.drinks.count
 //        UserModel.getList().count
@@ -48,8 +48,8 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
 //        let user = UserModel.getList()[indexPath.row]
 //        cell.setData(user)
         
-//        cell.setDataDrinks(widh: result.drinks[indexPath.row])
-        cell.setDataContact(widh: resultContact[indexPath.row])
+        cell.setDataDrinks(widh: result.drinks[indexPath.row])
+//        cell.setDataContact(widh: resultContact[indexPath.row])
         cell.accessoryType = .detailButton
         return cell
     }
